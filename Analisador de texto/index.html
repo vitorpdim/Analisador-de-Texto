@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Vogais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <header class="header">
+            <div class="icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 7V4a2 2 0 0 1 2-2h8m0 0v2m0-2a2 2 0 0 1 2 2v3m0 0v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7m0 0h16"/>
+                </svg>
+            </div>
+            <h1>Contador de Vogais</h1>
+            <p>Digite um texto e veja quantas vogais ele contém</p>
+        </header>
+
+        <!-- main Card -->
+        <div class="card">
+            <div class="input-section">
+                <label for="texto">Digite seu texto:</label>
+                <textarea 
+                    id="texto" 
+                    placeholder="Digite aqui o texto que deseja analisar..."
+                    rows="4"
+                ></textarea>
+            </div>
+
+            <!-- botoes -->
+            <div class="buttons">
+                <button id="analisar" class="btn-primary">
+                    Analisar Texto
+                </button>
+                <button id="limpar" class="btn-secondary">Limpar</button>
+            </div>
+
+            <!-- resultados -->
+            <div id="resultados" class="results hidden">
+                <div class="result-card vowel-count">
+                    <div class="result-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3h18v18H3zM9 9h6v6H9z"/>
+                        </svg>
+                        <h3>Total de Vogais</h3>
+                    </div>
+                    <p id="contador" class="big-number">0</p>
+                </div>
+
+                <div class="result-card">
+                    <h3>Texto Formatado:</h3>
+                    <div id="texto-formatado" class="formatted-text"></div>
+                </div>
+
+                <!-- estatisticas -->
+                <div class="stats">
+                    <div class="stat-card">
+                        <p class="stat-label">Total de Caracteres</p>
+                        <p id="total-chars" class="stat-value">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-label">Porcentagem de Vogais</p>
+                        <p id="porcentagem" class="stat-value">0%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- empty state -->
+            <div id="empty-state" class="empty-state">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 7V4a2 2 0 0 1 2-2h8m0 0v2m0-2a2 2 0 0 1 2 2v3m0 0v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7m0 0h16"/>
+                </svg>
+                <p>Digite um texto acima e clique em "Analisar Texto" para ver os resultados</p>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+            <p>Contador de Vogais - Analise textos de forma rápida e fácil - Por: Victor Hugo</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
