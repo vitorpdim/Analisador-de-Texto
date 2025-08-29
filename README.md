@@ -1,5 +1,7 @@
 🔡 Analisador de Texto
 
+![Captura de Tela do Software](https://github.com/user-attachments/assets/200dc0ca-c3b5-424d-9d73-fb516dfd38f6)
+
 Um programa onde o usuário digita qualquer texto e o sistema separa os caracteres, mostra a quantidade de vogais e exibe algumas estatísticas básicas em tempo real.
 
 ----- Funcionalidades
